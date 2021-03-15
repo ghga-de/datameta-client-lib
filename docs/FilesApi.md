@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **400** | Validation Error |  -  |
-**500** | Validation Error |  -  |
+**500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -182,7 +182,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | File not found |  -  |
 **400** | Validation Error |  -  |
-**500** | Validation Error |  -  |
+**500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | File not found |  -  |
 **400** | Validation Error |  -  |
-**500** | Validation Error |  -  |
+**500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -279,7 +279,7 @@ Name | Type | Description  | Notes
 
 Update File Details
 
-Update details for a File.  E.g. to indicate that the File content  has been uploaded (set contentUploaded=true). Please note: this only works for Files that have not been submitted, yet. Other file attributes (checksum and name) can only be updated until contentUploaded has been set to 'true'.
+Update details for a File. E.g. to indicate that the File content has been uploaded (set contentUploaded=true). Please note: this only works for Files that have not been submitted, yet. Other file attributes (checksum and name) can only be updated until contentUploaded has been set to 'true'.
 
 ### Example
 
@@ -323,7 +323,7 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
     file_update_request = FileUpdateRequest(
         name="name_example",
         content_uploaded=True,
-        check_sum="check_sum_example",
+        checksum="checksum_example",
     ) # FileUpdateRequest | Provide properties of the file that shall be updated. (optional)
 
     # example passing only required values which don't have defaults set
@@ -374,7 +374,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **409** | Mismatch between uploaded data checksum and announced checksum |  -  |
 **400** | Validation Error |  -  |
-**500** | Validation Error |  -  |
+**500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

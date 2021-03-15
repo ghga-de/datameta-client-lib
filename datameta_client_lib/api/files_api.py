@@ -402,7 +402,7 @@ class FilesApi(object):
         ):
             """Update File Details  # noqa: E501
 
-            Update details for a File.  E.g. to indicate that the File content  has been uploaded (set contentUploaded=true). Please note: this only works for Files that have not been submitted, yet. Other file attributes (checksum and name) can only be updated until contentUploaded has been set to 'true'.  # noqa: E501
+            Update details for a File. E.g. to indicate that the File content has been uploaded (set contentUploaded=true). Please note: this only works for Files that have not been submitted, yet. Other file attributes (checksum and name) can only be updated until contentUploaded has been set to 'true'.  # noqa: E501
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 

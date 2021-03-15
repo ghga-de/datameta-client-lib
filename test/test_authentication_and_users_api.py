@@ -11,14 +11,14 @@
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.api.users_api import UsersApi  # noqa: E501
+from datameta_client_lib.api.authentication_and_users_api import AuthenticationAndUsersApi  # noqa: E501
 
 
-class TestUsersApi(unittest.TestCase):
-    """UsersApi unit test stubs"""
+class TestAuthenticationAndUsersApi(unittest.TestCase):
+    """AuthenticationAndUsersApi unit test stubs"""
 
     def setUp(self):
-        self.api = UsersApi()  # noqa: E501
+        self.api = AuthenticationAndUsersApi()  # noqa: E501
 
     def tearDown(self):
         pass
@@ -37,10 +37,17 @@ class TestUsersApi(unittest.TestCase):
         """
         pass
 
-    def test_register_user(self):
-        """Test case for register_user
+    def test_get_user_api_keys(self):
+        """Test case for get_user_api_keys
 
-        Register a New User  # noqa: E501
+        All API keys for a user  # noqa: E501
+        """
+        pass
+
+    def test_set_user_password(self):
+        """Test case for set_user_password
+
+        Update a user's password  # noqa: E501
         """
         pass
 

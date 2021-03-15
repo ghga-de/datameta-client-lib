@@ -49,11 +49,10 @@ Please follow the [installation procedure](#installation--usage) and then run th
 import time
 import datameta_client_lib
 from pprint import pprint
-from datameta_client_lib.api import authentication_api
+from datameta_client_lib.api import authentication_and_users_api
 from datameta_client_lib.model.api_key_list import ApiKeyList
 from datameta_client_lib.model.create_token_request import CreateTokenRequest
 from datameta_client_lib.model.password_change import PasswordChange
-from datameta_client_lib.model.reg_request import RegRequest
 from datameta_client_lib.model.user_session import UserSession
 from datameta_client_lib.model.validation_error_model import ValidationErrorModel
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
@@ -82,7 +81,7 @@ configuration.api_key['cookieAuth'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with datameta_client_lib.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = authentication_api.AuthenticationApi(api_client)
+    api_instance = authentication_and_users_api.AuthenticationAndUsersApi(api_client)
     create_token_request = CreateTokenRequest(
         email="email_example",
         password="password_example",
@@ -95,7 +94,7 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
         api_response = api_instance.create_api_key(create_token_request=create_token_request)
         pprint(api_response)
     except datameta_client_lib.ApiException as e:
-        print("Exception when calling AuthenticationApi->create_api_key: %s\n" % e)
+        print("Exception when calling AuthenticationAndUsersApi->create_api_key: %s\n" % e)
 ```
 
 ## Documentation for API Endpoints
@@ -104,25 +103,21 @@ All URIs are relative to *https://raw.githubusercontent.com/api/v0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AuthenticationApi* | [**create_api_key**](docs/AuthenticationApi.md#create_api_key) | **POST** /keys | Create new API Key/Token
-*AuthenticationApi* | [**delete_api_key**](docs/AuthenticationApi.md#delete_api_key) | **DELETE** /keys/{id} | Delete ApiKey by label
-*AuthenticationApi* | [**get_user_api_keys**](docs/AuthenticationApi.md#get_user_api_keys) | **GET** /users/{id}/keys | All API keys for a user
-*AuthenticationApi* | [**register_user**](docs/AuthenticationApi.md#register_user) | **POST** /users | Register a New User
-*AuthenticationApi* | [**set_user_password**](docs/AuthenticationApi.md#set_user_password) | **PUT** /users/{id}/password | Update a user&#39;s password
+*AuthenticationAndUsersApi* | [**create_api_key**](docs/AuthenticationAndUsersApi.md#create_api_key) | **POST** /keys | Create new API Key/Token
+*AuthenticationAndUsersApi* | [**delete_api_key**](docs/AuthenticationAndUsersApi.md#delete_api_key) | **DELETE** /keys/{id} | Delete ApiKey by label
+*AuthenticationAndUsersApi* | [**get_user_api_keys**](docs/AuthenticationAndUsersApi.md#get_user_api_keys) | **GET** /users/{id}/keys | All API keys for a user
+*AuthenticationAndUsersApi* | [**set_user_password**](docs/AuthenticationAndUsersApi.md#set_user_password) | **PUT** /users/{id}/password | Update a user&#39;s password
 *FilesApi* | [**create_file**](docs/FilesApi.md#create_file) | **POST** /files | Create a New File
 *FilesApi* | [**delete_file**](docs/FilesApi.md#delete_file) | **DELETE** /files/{id} | Delete Not-Submitted File
 *FilesApi* | [**get_file**](docs/FilesApi.md#get_file) | **GET** /files/{id} | Get Details for A File
 *FilesApi* | [**update_file**](docs/FilesApi.md#update_file) | **PUT** /files/{id} | Update File Details
 *GroupsApi* | [**get_group_submissions**](docs/GroupsApi.md#get_group_submissions) | **GET** /groups/{id}/submissions | Get A List of All Submissions of A Group.
 *MetadataApi* | [**create_meta_data_set**](docs/MetadataApi.md#create_meta_data_set) | **POST** /metadatasets | Create a New MetaDataSet
-*MetadataApi* | [**get_meta_data_set**](docs/MetadataApi.md#get_meta_data_set) | **GET** /metadatasets/{id} | Get Details for A MetaDataSet
+*MetadataApi* | [**delete_metadata_set**](docs/MetadataApi.md#delete_metadata_set) | **DELETE** /metadatasets/{id} | Delete Not-Submitted Metadataset
+*MetadataApi* | [**get_meta_data_set**](docs/MetadataApi.md#get_meta_data_set) | **GET** /metadatasets/{id} | Get Details for a MetaDataSet
 *SubmissionsApi* | [**create_submission**](docs/SubmissionsApi.md#create_submission) | **POST** /submissions | Create a New Submission
 *SubmissionsApi* | [**get_group_submissions**](docs/SubmissionsApi.md#get_group_submissions) | **GET** /groups/{id}/submissions | Get A List of All Submissions of A Group.
 *SubmissionsApi* | [**prevalidate_submission**](docs/SubmissionsApi.md#prevalidate_submission) | **POST** /presubvalidation | Pre-validate a submission
-*UserApi* | [**get_user_api_keys**](docs/UserApi.md#get_user_api_keys) | **GET** /users/{id}/keys | All API keys for a user
-*UsersApi* | [**create_api_key**](docs/UsersApi.md#create_api_key) | **POST** /keys | Create new API Key/Token
-*UsersApi* | [**delete_api_key**](docs/UsersApi.md#delete_api_key) | **DELETE** /keys/{id} | Delete ApiKey by label
-*UsersApi* | [**register_user**](docs/UsersApi.md#register_user) | **POST** /users | Register a New User
 
 
 ## Documentation For Models
@@ -135,10 +130,10 @@ Class | Method | HTTP request | Description
  - [FileUpdateRequest](docs/FileUpdateRequest.md)
  - [FileUploadResponse](docs/FileUploadResponse.md)
  - [GroupSubmissions](docs/GroupSubmissions.md)
+ - [Identifier](docs/Identifier.md)
  - [MetaDataSet](docs/MetaDataSet.md)
  - [MetaDataSetResponse](docs/MetaDataSetResponse.md)
  - [PasswordChange](docs/PasswordChange.md)
- - [RegRequest](docs/RegRequest.md)
  - [SubmissionRequest](docs/SubmissionRequest.md)
  - [SubmissionResponse](docs/SubmissionResponse.md)
  - [UserSession](docs/UserSession.md)

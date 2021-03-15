@@ -30,10 +30,17 @@ class TestMetadataApi(unittest.TestCase):
         """
         pass
 
+    def test_delete_metadata_set(self):
+        """Test case for delete_metadata_set
+
+        Delete Not-Submitted Metadataset  # noqa: E501
+        """
+        pass
+
     def test_get_meta_data_set(self):
         """Test case for get_meta_data_set
 
-        Get Details for A MetaDataSet  # noqa: E501
+        Get Details for a MetaDataSet  # noqa: E501
         """
         pass
 

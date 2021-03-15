@@ -17,10 +17,10 @@ from datameta_client_lib.model.file_response import FileResponse
 from datameta_client_lib.model.file_update_request import FileUpdateRequest
 from datameta_client_lib.model.file_upload_response import FileUploadResponse
 from datameta_client_lib.model.group_submissions import GroupSubmissions
+from datameta_client_lib.model.identifier import Identifier
 from datameta_client_lib.model.meta_data_set import MetaDataSet
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from datameta_client_lib.model.password_change import PasswordChange
-from datameta_client_lib.model.reg_request import RegRequest
 from datameta_client_lib.model.submission_request import SubmissionRequest
 from datameta_client_lib.model.submission_response import SubmissionResponse
 from datameta_client_lib.model.user_session import UserSession
