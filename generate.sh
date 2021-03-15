@@ -10,5 +10,8 @@ docker run --rm \
         generate \
         -i "${OPENAPI_SOURCE}" \
         -g python \
+	-p "infoName=DataMeta Dev Team" \
+	-p "infoEmail=leon.kuchenbecker@uni-tuebingen.de" \
+	-p "packageVersion=0.0.1" \
         --package-name datameta_client_lib \
         -o /datameta_client_lib
