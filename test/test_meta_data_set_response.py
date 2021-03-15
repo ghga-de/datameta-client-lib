@@ -12,6 +12,8 @@ import sys
 import unittest
 
 import datameta_client_lib
+from datameta_client_lib.model.identifier import Identifier
+globals()['Identifier'] = Identifier
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 
 

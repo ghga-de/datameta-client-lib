@@ -12,11 +12,11 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.reg_request import RegRequest
+from datameta_client_lib.model.identifier import Identifier
 
 
-class TestRegRequest(unittest.TestCase):
-    """RegRequest unit test stubs"""
+class TestIdentifier(unittest.TestCase):
+    """Identifier unit test stubs"""
 
     def setUp(self):
         pass
@@ -24,10 +24,10 @@ class TestRegRequest(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testRegRequest(self):
-        """Test RegRequest"""
+    def testIdentifier(self):
+        """Test Identifier"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = RegRequest()  # noqa: E501
+        # model = Identifier()  # noqa: E501
         pass
 
 

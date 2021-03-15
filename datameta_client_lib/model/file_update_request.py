@@ -74,7 +74,7 @@ class FileUpdateRequest(ModelNormal):
         return {
             'name': (str,),  # noqa: E501
             'content_uploaded': (bool,),  # noqa: E501
-            'check_sum': (str,),  # noqa: E501
+            'checksum': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -85,7 +85,7 @@ class FileUpdateRequest(ModelNormal):
     attribute_map = {
         'name': 'name',  # noqa: E501
         'content_uploaded': 'contentUploaded',  # noqa: E501
-        'check_sum': 'checkSum',  # noqa: E501
+        'checksum': 'checksum',  # noqa: E501
     }
 
     _composed_schemas = {}
@@ -136,7 +136,7 @@ class FileUpdateRequest(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             name (str): [optional]  # noqa: E501
             content_uploaded (bool): [optional]  # noqa: E501
-            check_sum (str): [optional]  # noqa: E501
+            checksum (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
