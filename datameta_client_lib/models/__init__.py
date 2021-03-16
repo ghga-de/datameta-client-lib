@@ -19,6 +19,7 @@ from datameta_client_lib.model.file_upload_response import FileUploadResponse
 from datameta_client_lib.model.group_submissions import GroupSubmissions
 from datameta_client_lib.model.group_update_request import GroupUpdateRequest
 from datameta_client_lib.model.identifier import Identifier
+from datameta_client_lib.model.meta_data_response import MetaDataResponse
 from datameta_client_lib.model.meta_data_set import MetaDataSet
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from datameta_client_lib.model.password_change import PasswordChange
