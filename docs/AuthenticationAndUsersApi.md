@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**delete_api_key**](AuthenticationAndUsersApi.md#delete_api_key) | **DELETE** /keys/{id} | Delete ApiKey by label
 [**get_user_api_keys**](AuthenticationAndUsersApi.md#get_user_api_keys) | **GET** /users/{id}/keys | All API keys for a user
 [**set_user_password**](AuthenticationAndUsersApi.md#set_user_password) | **PUT** /users/{id}/password | Update a user&#39;s password
+[**user_update_request**](AuthenticationAndUsersApi.md#user_update_request) | **PUT** /users/{id} | Update a user&#39;s credentials and status
 
 
 # **create_api_key**
@@ -372,6 +373,109 @@ void (empty response body)
 **403** | The specified user does not exist or is not the same user as the authorized user. |  -  |
 **404** | Password reset token not found |  -  |
 **410** | Password reset token expired |  -  |
+**400** | Validation Error |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_update_request**
+> user_update_request(id)
+
+Update a user's credentials and status
+
+Update a user's name, group, admin status and enabled status.
+
+### Example
+
+* Bearer Authentication (bearerAuth):
+* Api Key Authentication (cookieAuth):
+```python
+import time
+import datameta_client_lib
+from datameta_client_lib.api import authentication_and_users_api
+from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.user_update_request import UserUpdateRequest
+from pprint import pprint
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# See configuration.py for a list of all supported configuration parameters.
+configuration = datameta_client_lib.Configuration(
+    host = "https://raw.githubusercontent.com/api/v0"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearerAuth
+configuration = datameta_client_lib.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure API key authorization: cookieAuth
+configuration.api_key['cookieAuth'] = 'YOUR_API_KEY'
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['cookieAuth'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with datameta_client_lib.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = authentication_and_users_api.AuthenticationAndUsersApi(api_client)
+    id = "id_example" # str | User ID
+    user_update_request = UserUpdateRequest(
+        name="name_example",
+        group_id="group_id_example",
+        group_admin=True,
+        site_admin=True,
+        enabled=True,
+    ) # UserUpdateRequest | username, group, admin status and enabled status (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Update a user's credentials and status
+        api_instance.user_update_request(id)
+    except datameta_client_lib.ApiException as e:
+        print("Exception when calling AuthenticationAndUsersApi->user_update_request: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # Update a user's credentials and status
+        api_instance.user_update_request(id, user_update_request=user_update_request)
+    except datameta_client_lib.ApiException as e:
+        print("Exception when calling AuthenticationAndUsersApi->user_update_request: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| User ID |
+ **user_update_request** | [**UserUpdateRequest**](UserUpdateRequest.md)| username, group, admin status and enabled status | [optional]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth), [cookieAuth](../README.md#cookieAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | User update successful |  -  |
+**401** | Unauthorized |  -  |
+**403** | This user does not have the rights to perform this action. |  -  |
+**404** | The specified user or group does not exist. |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 

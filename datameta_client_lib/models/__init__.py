@@ -25,4 +25,5 @@ from datameta_client_lib.model.password_change import PasswordChange
 from datameta_client_lib.model.submission_request import SubmissionRequest
 from datameta_client_lib.model.submission_response import SubmissionResponse
 from datameta_client_lib.model.user_session import UserSession
+from datameta_client_lib.model.user_update_request import UserUpdateRequest
 from datameta_client_lib.model.validation_error_model import ValidationErrorModel

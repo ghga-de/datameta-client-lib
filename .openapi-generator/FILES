@@ -30,6 +30,7 @@ datameta_client_lib/model/password_change.py
 datameta_client_lib/model/submission_request.py
 datameta_client_lib/model/submission_response.py
 datameta_client_lib/model/user_session.py
+datameta_client_lib/model/user_update_request.py
 datameta_client_lib/model/validation_error_model.py
 datameta_client_lib/model_utils.py
 datameta_client_lib/models/__init__.py
@@ -56,6 +57,7 @@ docs/SubmissionRequest.md
 docs/SubmissionResponse.md
 docs/SubmissionsApi.md
 docs/UserSession.md
+docs/UserUpdateRequest.md
 docs/ValidationErrorModel.md
 git_push.sh
 requirements.txt
@@ -84,5 +86,6 @@ test/test_submission_request.py
 test/test_submission_response.py
 test/test_submissions_api.py
 test/test_user_session.py
+test/test_user_update_request.py
 test/test_validation_error_model.py
 tox.ini

@@ -13,11 +13,11 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.password_change import PasswordChange
+from datameta_client_lib.model.user_update_request import UserUpdateRequest
 
 
-class TestPasswordChange(unittest.TestCase):
-    """PasswordChange unit test stubs"""
+class TestUserUpdateRequest(unittest.TestCase):
+    """UserUpdateRequest unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +25,10 @@ class TestPasswordChange(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testPasswordChange(self):
-        """Test PasswordChange"""
+    def testUserUpdateRequest(self):
+        """Test UserUpdateRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = PasswordChange()  # noqa: E501
+        # model = UserUpdateRequest()  # noqa: E501
         pass
 
 
