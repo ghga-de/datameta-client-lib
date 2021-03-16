@@ -59,6 +59,7 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
             "metadataset_ids_example",
         ],
         file_ids=[],
+        label="label_example",
     ) # SubmissionRequest | Provide a list of metadatasets and a list of files. (optional)
 
     # example passing only required values which don't have defaults set
@@ -240,6 +241,7 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
         file_ids=[
             "file_ids_example",
         ],
+        label="label_example",
     ) # SubmissionRequest | Provide a list of metadatasets and a list of files. (optional)
 
     # example passing only required values which don't have defaults set
