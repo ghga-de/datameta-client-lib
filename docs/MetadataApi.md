@@ -95,7 +95,6 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **401** | Unauthorized |  -  |
-**403** | Forbidden |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 
