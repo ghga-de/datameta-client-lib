@@ -10,6 +10,8 @@
 # sys.setrecursionlimit(n)
 
 from datameta_client_lib.model.api_key_list import ApiKeyList
+from datameta_client_lib.model.app_settings_response import AppSettingsResponse
+from datameta_client_lib.model.app_settings_update_request import AppSettingsUpdateRequest
 from datameta_client_lib.model.create_token_request import CreateTokenRequest
 from datameta_client_lib.model.error import Error
 from datameta_client_lib.model.file_announcement import FileAnnouncement
@@ -22,6 +24,7 @@ from datameta_client_lib.model.identifier import Identifier
 from datameta_client_lib.model.meta_data_response import MetaDataResponse
 from datameta_client_lib.model.meta_data_set import MetaDataSet
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
+from datameta_client_lib.model.meta_datum import MetaDatum
 from datameta_client_lib.model.password_change import PasswordChange
 from datameta_client_lib.model.submission_request import SubmissionRequest
 from datameta_client_lib.model.submission_response import SubmissionResponse

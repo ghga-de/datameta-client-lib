@@ -18,4 +18,5 @@ from datameta_client_lib.api.authentication_and_users_api import AuthenticationA
 from datameta_client_lib.api.files_api import FilesApi
 from datameta_client_lib.api.groups_api import GroupsApi
 from datameta_client_lib.api.metadata_api import MetadataApi
+from datameta_client_lib.api.settings_api import SettingsApi
 from datameta_client_lib.api.submissions_api import SubmissionsApi
