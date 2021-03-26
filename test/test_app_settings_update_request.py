@@ -13,11 +13,11 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.meta_data_response import MetaDataResponse
+from datameta_client_lib.model.app_settings_update_request import AppSettingsUpdateRequest
 
 
-class TestMetaDataResponse(unittest.TestCase):
-    """MetaDataResponse unit test stubs"""
+class TestAppSettingsUpdateRequest(unittest.TestCase):
+    """AppSettingsUpdateRequest unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +25,10 @@ class TestMetaDataResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testMetaDataResponse(self):
-        """Test MetaDataResponse"""
+    def testAppSettingsUpdateRequest(self):
+        """Test AppSettingsUpdateRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = MetaDataResponse()  # noqa: E501
+        # model = AppSettingsUpdateRequest()  # noqa: E501
         pass
 
 

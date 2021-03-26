@@ -13,11 +13,13 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.meta_data_response import MetaDataResponse
+from datameta_client_lib.model.identifier import Identifier
+globals()['Identifier'] = Identifier
+from datameta_client_lib.model.app_settings_response import AppSettingsResponse
 
 
-class TestMetaDataResponse(unittest.TestCase):
-    """MetaDataResponse unit test stubs"""
+class TestAppSettingsResponse(unittest.TestCase):
+    """AppSettingsResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +27,10 @@ class TestMetaDataResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testMetaDataResponse(self):
-        """Test MetaDataResponse"""
+    def testAppSettingsResponse(self):
+        """Test AppSettingsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = MetaDataResponse()  # noqa: E501
+        # model = AppSettingsResponse()  # noqa: E501
         pass
 
 
