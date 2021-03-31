@@ -9,7 +9,6 @@ Name | Type | Description | Notes
 **content_uploaded** | **bool, none_type** |  | 
 **checksum** | **str** |  | 
 **user_id** | [**Identifier**](Identifier.md) |  | 
-**group_id** | [**Identifier**](Identifier.md) |  | 
 **expires** | **str** |  | 
 **filesize** | **int, none_type** |  | [optional] 
 

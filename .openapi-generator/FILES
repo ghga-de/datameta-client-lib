@@ -20,6 +20,7 @@ datameta_client_lib/model/app_settings_response.py
 datameta_client_lib/model/app_settings_update_request.py
 datameta_client_lib/model/create_token_request.py
 datameta_client_lib/model/error.py
+datameta_client_lib/model/error_model.py
 datameta_client_lib/model/file_announcement.py
 datameta_client_lib/model/file_response.py
 datameta_client_lib/model/file_update_request.py
@@ -31,12 +32,12 @@ datameta_client_lib/model/meta_data_response.py
 datameta_client_lib/model/meta_data_set.py
 datameta_client_lib/model/meta_data_set_response.py
 datameta_client_lib/model/meta_datum.py
+datameta_client_lib/model/nullable_identifier.py
 datameta_client_lib/model/password_change.py
 datameta_client_lib/model/submission_request.py
 datameta_client_lib/model/submission_response.py
 datameta_client_lib/model/user_session.py
 datameta_client_lib/model/user_update_request.py
-datameta_client_lib/model/validation_error_model.py
 datameta_client_lib/model_utils.py
 datameta_client_lib/models/__init__.py
 datameta_client_lib/models/__init__.py
@@ -47,6 +48,7 @@ docs/AppSettingsUpdateRequest.md
 docs/AuthenticationAndUsersApi.md
 docs/CreateTokenRequest.md
 docs/Error.md
+docs/ErrorModel.md
 docs/FileAnnouncement.md
 docs/FileResponse.md
 docs/FileUpdateRequest.md
@@ -61,6 +63,7 @@ docs/MetaDataSet.md
 docs/MetaDataSetResponse.md
 docs/MetaDatum.md
 docs/MetadataApi.md
+docs/NullableIdentifier.md
 docs/PasswordChange.md
 docs/SettingsApi.md
 docs/SubmissionRequest.md
@@ -68,7 +71,6 @@ docs/SubmissionResponse.md
 docs/SubmissionsApi.md
 docs/UserSession.md
 docs/UserUpdateRequest.md
-docs/ValidationErrorModel.md
 git_push.sh
 requirements.txt
 setup.cfg
@@ -81,6 +83,7 @@ test/test_app_settings_update_request.py
 test/test_authentication_and_users_api.py
 test/test_create_token_request.py
 test/test_error.py
+test/test_error_model.py
 test/test_file_announcement.py
 test/test_file_response.py
 test/test_file_update_request.py
@@ -95,6 +98,7 @@ test/test_meta_data_set.py
 test/test_meta_data_set_response.py
 test/test_meta_datum.py
 test/test_metadata_api.py
+test/test_nullable_identifier.py
 test/test_password_change.py
 test/test_settings_api.py
 test/test_submission_request.py
@@ -102,5 +106,4 @@ test/test_submission_response.py
 test/test_submissions_api.py
 test/test_user_session.py
 test/test_user_update_request.py
-test/test_validation_error_model.py
 tox.ini

@@ -24,7 +24,7 @@ import time
 import datameta_client_lib
 from datameta_client_lib.api import settings_api
 from datameta_client_lib.model.app_settings_response import AppSettingsResponse
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -107,7 +107,7 @@ import time
 import datameta_client_lib
 from datameta_client_lib.api import settings_api
 from datameta_client_lib.model.app_settings_update_request import AppSettingsUpdateRequest
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -184,6 +184,7 @@ void (empty response body)
 **204** | App Settings Updated |  -  |
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
+**404** | Setting does not exist |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 

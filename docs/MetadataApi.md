@@ -27,7 +27,7 @@ Create a new MetaDataSet
 import time
 import datameta_client_lib
 from datameta_client_lib.api import metadata_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from datameta_client_lib.model.meta_data_set import MetaDataSet
 from pprint import pprint
@@ -117,8 +117,8 @@ Create a new MetaDatum. This is an administrative Endpoint that is not accessibl
 import time
 import datameta_client_lib
 from datameta_client_lib.api import metadata_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
 from datameta_client_lib.model.meta_datum import MetaDatum
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -196,6 +196,7 @@ void (empty response body)
 **204** | Metadatum added successfully |  -  |
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
+**404** | The specified metadataset does not exist. |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 
@@ -216,7 +217,7 @@ Delete File. Please note: This is only allowed if the metadataset has not been p
 import time
 import datameta_client_lib
 from datameta_client_lib.api import metadata_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -280,8 +281,8 @@ void (empty response body)
 |-------------|-------------|------------------|
 **204** | Deletion successful |  -  |
 **401** | Unauthorized |  -  |
-**403** | Forbidden |  -  |
-**404** | File not found |  -  |
+**403** | Either forbidden or the resource is not modifiable |  -  |
+**404** | The specified metadataset does not exist. |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 
@@ -382,7 +383,7 @@ Get details for a metadataset.
 import time
 import datameta_client_lib
 from datameta_client_lib.api import metadata_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
@@ -450,6 +451,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 **400** | Validation Error |  -  |
+**404** | The specified metadataset does not exist. |  -  |
 **500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -469,8 +471,8 @@ Update a MetaDatum. This is an administrative Endpoint that is not accessible fo
 import time
 import datameta_client_lib
 from datameta_client_lib.api import metadata_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
 from datameta_client_lib.model.meta_datum import MetaDatum
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.

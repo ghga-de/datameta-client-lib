@@ -25,8 +25,8 @@ import time
 import datameta_client_lib
 from datameta_client_lib.api import submissions_api
 from datameta_client_lib.model.submission_response import SubmissionResponse
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
 from datameta_client_lib.model.submission_request import SubmissionRequest
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_group_submissions**
-> [GroupSubmissions] get_group_submissions(id)
+> GroupSubmissions get_group_submissions(id)
 
 Get A List of All Submissions of A Group.
 
@@ -119,7 +119,7 @@ import time
 import datameta_client_lib
 from datameta_client_lib.api import submissions_api
 from datameta_client_lib.model.group_submissions import GroupSubmissions
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[GroupSubmissions]**](GroupSubmissions.md)
+[**GroupSubmissions**](GroupSubmissions.md)
 
 ### Authorization
 
@@ -185,6 +185,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
+**404** | The specified group does not exist. |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 
@@ -205,8 +206,8 @@ Pre-validates a submission request without actually creating a submission.  A su
 import time
 import datameta_client_lib
 from datameta_client_lib.api import submissions_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
 from datameta_client_lib.model.submission_request import SubmissionRequest
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.

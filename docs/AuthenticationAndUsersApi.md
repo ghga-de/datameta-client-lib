@@ -26,7 +26,7 @@ Create new API Key/Token
 import time
 import datameta_client_lib
 from datameta_client_lib.api import authentication_and_users_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.create_token_request import CreateTokenRequest
 from datameta_client_lib.model.user_session import UserSession
 from pprint import pprint
@@ -120,7 +120,7 @@ Delete ApiKey by label.
 import time
 import datameta_client_lib
 from datameta_client_lib.api import authentication_and_users_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -185,6 +185,7 @@ void (empty response body)
 **200** | OK |  -  |
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
+**404** | The specified key does not exist. |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 
@@ -206,7 +207,7 @@ import time
 import datameta_client_lib
 from datameta_client_lib.api import authentication_and_users_api
 from datameta_client_lib.model.api_key_list import ApiKeyList
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -272,6 +273,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
+**404** | The specified user does not exist. |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 
@@ -292,7 +294,7 @@ Update a user's password. The user ID can be specified either as a UUID or as a 
 import time
 import datameta_client_lib
 from datameta_client_lib.api import authentication_and_users_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.password_change import PasswordChange
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
@@ -393,7 +395,7 @@ Update a user's name, group, admin status and enabled status.
 import time
 import datameta_client_lib
 from datameta_client_lib.api import authentication_and_users_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.user_update_request import UserUpdateRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
@@ -475,7 +477,7 @@ void (empty response body)
 **204** | User update successful |  -  |
 **401** | Unauthorized |  -  |
 **403** | This user does not have the rights to perform this action. |  -  |
-**404** | The specified user or group does not exist. |  -  |
+**404** | The specified user does not exist. |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
 

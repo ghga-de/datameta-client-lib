@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **url_to_upload** | **str** |  | 
 **user_id** | [**Identifier**](Identifier.md) |  | 
-**group_id** | [**Identifier**](Identifier.md) |  | 
 **expires** | **str** |  | 
 **request_headers** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}** |  | [optional] 
 
