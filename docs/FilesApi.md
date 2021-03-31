@@ -26,7 +26,7 @@ import time
 import datameta_client_lib
 from datameta_client_lib.api import files_api
 from datameta_client_lib.model.file_upload_response import FileUploadResponse
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.file_announcement import FileAnnouncement
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
@@ -116,7 +116,7 @@ Delete File. Please note: This is only allowed if the File has not been part of 
 import time
 import datameta_client_lib
 from datameta_client_lib.api import files_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
 # See configuration.py for a list of all supported configuration parameters.
@@ -202,7 +202,7 @@ Get details for a file.
 import time
 import datameta_client_lib
 from datameta_client_lib.api import files_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.file_response import FileResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **401** | Unauthorized |  -  |
-**403** | Forbidden |  -  |
+**403** | Either forbidden or the resource is not modifiable |  -  |
 **404** | File not found |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
@@ -290,7 +290,7 @@ Update details for a File. E.g. to indicate that the File content has been uploa
 import time
 import datameta_client_lib
 from datameta_client_lib.api import files_api
-from datameta_client_lib.model.validation_error_model import ValidationErrorModel
+from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.file_response import FileResponse
 from datameta_client_lib.model.file_update_request import FileUpdateRequest
 from pprint import pprint
@@ -372,7 +372,8 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **401** | Unauthorized |  -  |
-**403** | Forbidden |  -  |
+**403** | Either forbidden or the resource is not modifiable |  -  |
+**404** | File not found |  -  |
 **409** | Mismatch between uploaded data checksum and announced checksum |  -  |
 **400** | Validation Error |  -  |
 **500** | Internal Server Error |  -  |
