@@ -28,7 +28,11 @@ from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from datameta_client_lib.model.meta_datum import MetaDatum
 from datameta_client_lib.model.nullable_identifier import NullableIdentifier
 from datameta_client_lib.model.password_change import PasswordChange
+from datameta_client_lib.model.staged_files import StagedFiles
+from datameta_client_lib.model.staged_meta_data_sets import StagedMetaDataSets
 from datameta_client_lib.model.submission_request import SubmissionRequest
 from datameta_client_lib.model.submission_response import SubmissionResponse
+from datameta_client_lib.model.user_response import UserResponse
+from datameta_client_lib.model.user_response_group import UserResponseGroup
 from datameta_client_lib.model.user_session import UserSession
 from datameta_client_lib.model.user_update_request import UserUpdateRequest
