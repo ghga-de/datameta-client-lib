@@ -11,7 +11,7 @@
 """
 
 
-__version__ = "0.10.0"
+__version__ = "0.12.0p1"
 
 # import ApiClient
 from datameta_client_lib.api_client import ApiClient
