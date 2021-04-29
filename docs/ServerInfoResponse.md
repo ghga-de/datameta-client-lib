@@ -1,16 +1,11 @@
-# UserResponse
+# ServerInfoResponse
 
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | [**Identifier**](Identifier.md) |  | 
-**name** | **str** |  | 
-**group_admin** | **bool** |  | 
-**site_admin** | **bool** |  | 
-**site_read** | **bool** |  | 
-**email** | **str** |  | 
-**group** | [**UserResponseGroup**](UserResponseGroup.md) |  | 
+**api_version** | **str** |  | 
+**datameta_version** | **str** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
