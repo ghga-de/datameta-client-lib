@@ -9,6 +9,7 @@ datameta_client_lib/api/files_api.py
 datameta_client_lib/api/groups_api.py
 datameta_client_lib/api/metadata_api.py
 datameta_client_lib/api/remote_procedure_calls_api.py
+datameta_client_lib/api/server_api.py
 datameta_client_lib/api/settings_api.py
 datameta_client_lib/api/submissions_api.py
 datameta_client_lib/api_client.py
@@ -35,6 +36,7 @@ datameta_client_lib/model/meta_data_set_response.py
 datameta_client_lib/model/meta_datum.py
 datameta_client_lib/model/nullable_identifier.py
 datameta_client_lib/model/password_change.py
+datameta_client_lib/model/server_info_response.py
 datameta_client_lib/model/staged_files.py
 datameta_client_lib/model/staged_meta_data_sets.py
 datameta_client_lib/model/submission_request.py
@@ -71,6 +73,8 @@ docs/MetadataApi.md
 docs/NullableIdentifier.md
 docs/PasswordChange.md
 docs/RemoteProcedureCallsApi.md
+docs/ServerApi.md
+docs/ServerInfoResponse.md
 docs/SettingsApi.md
 docs/StagedFiles.md
 docs/StagedMetaDataSets.md
@@ -111,6 +115,8 @@ test/test_metadata_api.py
 test/test_nullable_identifier.py
 test/test_password_change.py
 test/test_remote_procedure_calls_api.py
+test/test_server_api.py
+test/test_server_info_response.py
 test/test_settings_api.py
 test/test_staged_files.py
 test/test_staged_meta_data_sets.py

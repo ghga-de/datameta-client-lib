@@ -13,11 +13,11 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.api_key_list import ApiKeyList
+from datameta_client_lib.model.server_info_response import ServerInfoResponse
 
 
-class TestApiKeyList(unittest.TestCase):
-    """ApiKeyList unit test stubs"""
+class TestServerInfoResponse(unittest.TestCase):
+    """ServerInfoResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +25,10 @@ class TestApiKeyList(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testApiKeyList(self):
-        """Test ApiKeyList"""
+    def testServerInfoResponse(self):
+        """Test ServerInfoResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = ApiKeyList()  # noqa: E501
+        # model = ServerInfoResponse()  # noqa: E501
         pass
 
 

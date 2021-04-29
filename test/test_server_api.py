@@ -9,26 +9,26 @@
 """
 
 
-import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.api_key_list import ApiKeyList
+from datameta_client_lib.api.server_api import ServerApi  # noqa: E501
 
 
-class TestApiKeyList(unittest.TestCase):
-    """ApiKeyList unit test stubs"""
+class TestServerApi(unittest.TestCase):
+    """ServerApi unit test stubs"""
 
     def setUp(self):
-        pass
+        self.api = ServerApi()  # noqa: E501
 
     def tearDown(self):
         pass
 
-    def testApiKeyList(self):
-        """Test ApiKeyList"""
-        # FIXME: construct object with mandatory attributes with example values
-        # model = ApiKeyList()  # noqa: E501
+    def test_get_server_info(self):
+        """Test case for get_server_info
+
+        Get DataMeta server information  # noqa: E501
+        """
         pass
 
 

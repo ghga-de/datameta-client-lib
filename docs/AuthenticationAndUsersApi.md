@@ -430,6 +430,7 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
         group_id="group_id_example",
         group_admin=True,
         site_admin=True,
+        site_read=True,
         enabled=True,
     ) # UserUpdateRequest | username, group, admin status and enabled status (optional)
 
