@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**bulk_delete_staged_files**](RemoteProcedureCallsApi.md#bulk_delete_staged_files) | **POST** /rpc/delete-files | Bulk-delete Staged Files
 [**bulk_delete_staged_meta_data_sets**](RemoteProcedureCallsApi.md#bulk_delete_staged_meta_data_sets) | **POST** /rpc/delete-metadatasets | Bulk-delete Staged MetaDataSets
+[**get_file_url**](RemoteProcedureCallsApi.md#get_file_url) | **GET** /rpc/get-file-url/{id} | [Not RESTful]: Redirects to a temporary, pre-signed HTTP-URL for downloading a file.
 [**get_user_information**](RemoteProcedureCallsApi.md#get_user_information) | **GET** /rpc/whoami | [Not RESTful]: Returns information about the authenticated user
 
 
@@ -189,6 +190,102 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | File not found |  -  |
 **400** | Validation Error |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_file_url**
+> get_file_url(id)
+
+[Not RESTful]: Redirects to a temporary, pre-signed HTTP-URL for downloading a file.
+
+For the file with the given ID, this enpoint will redirect to a pre-signed HTTP URL for downloading the requested file. The pre-signed URL times out after a certain amount of time which can be configured with the \"expires\" query string. [Attention this endpoint is not RESTful, the result should not be cached.]
+
+### Example
+
+* Bearer Authentication (bearerAuth):
+* Api Key Authentication (cookieAuth):
+```python
+import time
+import datameta_client_lib
+from datameta_client_lib.api import remote_procedure_calls_api
+from datameta_client_lib.model.error_model import ErrorModel
+from pprint import pprint
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# See configuration.py for a list of all supported configuration parameters.
+configuration = datameta_client_lib.Configuration(
+    host = "https://raw.githubusercontent.com/api/v0"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearerAuth
+configuration = datameta_client_lib.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure API key authorization: cookieAuth
+configuration.api_key['cookieAuth'] = 'YOUR_API_KEY'
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['cookieAuth'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with datameta_client_lib.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = remote_procedure_calls_api.RemoteProcedureCallsApi(api_client)
+    id = "id_example" # str | ID of the file
+    expires = 1 # int | Minutes until the pre-signed URL will expire, defaults to 1 (optional) if omitted the server will use the default value of 1
+
+    # example passing only required values which don't have defaults set
+    try:
+        # [Not RESTful]: Redirects to a temporary, pre-signed HTTP-URL for downloading a file.
+        api_instance.get_file_url(id)
+    except datameta_client_lib.ApiException as e:
+        print("Exception when calling RemoteProcedureCallsApi->get_file_url: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # [Not RESTful]: Redirects to a temporary, pre-signed HTTP-URL for downloading a file.
+        api_instance.get_file_url(id, expires=expires)
+    except datameta_client_lib.ApiException as e:
+        print("Exception when calling RemoteProcedureCallsApi->get_file_url: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| ID of the file |
+ **expires** | **int**| Minutes until the pre-signed URL will expire, defaults to 1 | [optional] if omitted the server will use the default value of 1
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth), [cookieAuth](../README.md#cookieAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**307** | Redirecting to the pre-signed URL of the file |  * location - Location to redirect to <br>  |
+**400** | Validation Error |  -  |
+**401** | Unauthorized |  -  |
+**403** | Forbidden |  -  |
+**404** | The specified file does not exist. |  -  |
 **500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
