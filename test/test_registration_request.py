@@ -13,11 +13,11 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.nullable_identifier import NullableIdentifier
+from datameta_client_lib.model.registration_request import RegistrationRequest
 
 
-class TestNullableIdentifier(unittest.TestCase):
-    """NullableIdentifier unit test stubs"""
+class TestRegistrationRequest(unittest.TestCase):
+    """RegistrationRequest unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +25,10 @@ class TestNullableIdentifier(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testNullableIdentifier(self):
-        """Test NullableIdentifier"""
+    def testRegistrationRequest(self):
+        """Test RegistrationRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = NullableIdentifier()  # noqa: E501
+        # model = RegistrationRequest()  # noqa: E501
         pass
 
 

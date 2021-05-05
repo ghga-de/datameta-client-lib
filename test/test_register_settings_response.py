@@ -13,11 +13,13 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.nullable_identifier import NullableIdentifier
+from datameta_client_lib.model.user_response_group import UserResponseGroup
+globals()['UserResponseGroup'] = UserResponseGroup
+from datameta_client_lib.model.register_settings_response import RegisterSettingsResponse
 
 
-class TestNullableIdentifier(unittest.TestCase):
-    """NullableIdentifier unit test stubs"""
+class TestRegisterSettingsResponse(unittest.TestCase):
+    """RegisterSettingsResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +27,10 @@ class TestNullableIdentifier(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testNullableIdentifier(self):
-        """Test NullableIdentifier"""
+    def testRegisterSettingsResponse(self):
+        """Test RegisterSettingsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = NullableIdentifier()  # noqa: E501
+        # model = RegisterSettingsResponse()  # noqa: E501
         pass
 
 
