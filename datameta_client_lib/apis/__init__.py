@@ -20,6 +20,7 @@ from datameta_client_lib.api.groups_api import GroupsApi
 from datameta_client_lib.api.metadata_api import MetadataApi
 from datameta_client_lib.api.remote_procedure_calls_api import RemoteProcedureCallsApi
 from datameta_client_lib.api.server_api import ServerApi
+from datameta_client_lib.api.services_api import ServicesApi
 from datameta_client_lib.api.settings_api import SettingsApi
 from datameta_client_lib.api.submissions_api import SubmissionsApi
 from datameta_client_lib.api.user_api import UserApi

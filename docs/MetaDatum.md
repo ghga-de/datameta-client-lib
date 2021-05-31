@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **is_file** | **bool** |  | 
 **is_submission_unique** | **bool** |  | 
 **is_site_unique** | **bool** |  | 
+**service_id** | **str, none_type** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

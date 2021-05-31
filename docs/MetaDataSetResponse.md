@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **record** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}** |  | 
 **file_ids** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}** |  | [optional] 
+**service_executions** | [**{str: (MetaDataSetServiceExecution,)}, none_type**](MetaDataSetServiceExecution.md) |  | [optional] 
 **id** | [**Identifier**](Identifier.md) |  | [optional] 
 **submission_id** | [**NullableIdentifier**](NullableIdentifier.md) |  | [optional] 
 **user_id** | [**Identifier**](Identifier.md) |  | [optional] 

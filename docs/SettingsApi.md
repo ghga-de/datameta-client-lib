@@ -135,7 +135,7 @@ configuration.api_key['cookieAuth'] = 'YOUR_API_KEY'
 with datameta_client_lib.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = settings_api.SettingsApi(api_client)
-    id = "id_example" # str | ID of the group
+    id = "id_example" # str | ID of the appsetting
     app_settings_update_request = AppSettingsUpdateRequest(
         value="value_example",
     ) # AppSettingsUpdateRequest |  (optional)
@@ -161,7 +161,7 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| ID of the group |
+ **id** | **str**| ID of the appsetting |
  **app_settings_update_request** | [**AppSettingsUpdateRequest**](AppSettingsUpdateRequest.md)|  | [optional]
 
 ### Return type
