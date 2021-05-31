@@ -19,6 +19,7 @@ from datameta_client_lib.model.file_announcement import FileAnnouncement
 from datameta_client_lib.model.file_response import FileResponse
 from datameta_client_lib.model.file_update_request import FileUpdateRequest
 from datameta_client_lib.model.file_upload_response import FileUploadResponse
+from datameta_client_lib.model.file_url import FileUrl
 from datameta_client_lib.model.group_submissions import GroupSubmissions
 from datameta_client_lib.model.group_update_request import GroupUpdateRequest
 from datameta_client_lib.model.identifier import Identifier

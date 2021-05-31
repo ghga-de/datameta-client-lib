@@ -13,11 +13,13 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.password_change import PasswordChange
+from datameta_client_lib.model.identifier import Identifier
+globals()['Identifier'] = Identifier
+from datameta_client_lib.model.file_url import FileUrl
 
 
-class TestPasswordChange(unittest.TestCase):
-    """PasswordChange unit test stubs"""
+class TestFileUrl(unittest.TestCase):
+    """FileUrl unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +27,10 @@ class TestPasswordChange(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testPasswordChange(self):
-        """Test PasswordChange"""
+    def testFileUrl(self):
+        """Test FileUrl"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = PasswordChange()  # noqa: E501
+        # model = FileUrl()  # noqa: E501
         pass
 
 

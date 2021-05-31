@@ -209,6 +209,7 @@ For the file with the given ID, this enpoint will redirect to a pre-signed HTTP 
 import time
 import datameta_client_lib
 from datameta_client_lib.api import remote_procedure_calls_api
+from datameta_client_lib.model.file_url import FileUrl
 from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
