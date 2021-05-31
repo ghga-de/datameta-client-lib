@@ -29,6 +29,7 @@ datameta_client_lib/model/file_announcement.py
 datameta_client_lib/model/file_response.py
 datameta_client_lib/model/file_update_request.py
 datameta_client_lib/model/file_upload_response.py
+datameta_client_lib/model/file_url.py
 datameta_client_lib/model/group_submissions.py
 datameta_client_lib/model/group_update_request.py
 datameta_client_lib/model/identifier.py
@@ -71,6 +72,7 @@ docs/FileAnnouncement.md
 docs/FileResponse.md
 docs/FileUpdateRequest.md
 docs/FileUploadResponse.md
+docs/FileUrl.md
 docs/FilesApi.md
 docs/GroupSubmissions.md
 docs/GroupUpdateRequest.md
@@ -124,6 +126,7 @@ test/test_file_announcement.py
 test/test_file_response.py
 test/test_file_update_request.py
 test/test_file_upload_response.py
+test/test_file_url.py
 test/test_files_api.py
 test/test_group_submissions.py
 test/test_group_update_request.py
