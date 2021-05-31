@@ -195,7 +195,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_file_url**
-> get_file_url(id)
+> FileUrl get_file_url(id)
 
 [Not RESTful]: Redirects to a temporary, pre-signed HTTP-URL for downloading a file.
 
@@ -240,11 +240,13 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
     api_instance = remote_procedure_calls_api.RemoteProcedureCallsApi(api_client)
     id = "id_example" # str | ID of the file
     expires = 1 # int | Minutes until the pre-signed URL will expire, defaults to 1 (optional) if omitted the server will use the default value of 1
+    redirect = False # bool | If set to true, the endpoint will return a 307 response, otherwise a 200 response. (optional) if omitted the server will use the default value of False
 
     # example passing only required values which don't have defaults set
     try:
         # [Not RESTful]: Redirects to a temporary, pre-signed HTTP-URL for downloading a file.
-        api_instance.get_file_url(id)
+        api_response = api_instance.get_file_url(id)
+        pprint(api_response)
     except datameta_client_lib.ApiException as e:
         print("Exception when calling RemoteProcedureCallsApi->get_file_url: %s\n" % e)
 
@@ -252,7 +254,8 @@ with datameta_client_lib.ApiClient(configuration) as api_client:
     # and optional values
     try:
         # [Not RESTful]: Redirects to a temporary, pre-signed HTTP-URL for downloading a file.
-        api_instance.get_file_url(id, expires=expires)
+        api_response = api_instance.get_file_url(id, expires=expires, redirect=redirect)
+        pprint(api_response)
     except datameta_client_lib.ApiException as e:
         print("Exception when calling RemoteProcedureCallsApi->get_file_url: %s\n" % e)
 ```
@@ -264,10 +267,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID of the file |
  **expires** | **int**| Minutes until the pre-signed URL will expire, defaults to 1 | [optional] if omitted the server will use the default value of 1
+ **redirect** | **bool**| If set to true, the endpoint will return a 307 response, otherwise a 200 response. | [optional] if omitted the server will use the default value of False
 
 ### Return type
 
-void (empty response body)
+[**FileUrl**](FileUrl.md)
 
 ### Authorization
 
@@ -282,6 +286,7 @@ void (empty response body)
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
+**200** | OK |  -  |
 **307** | Redirecting to the pre-signed URL of the file |  * location - Location to redirect to <br>  |
 **400** | Validation Error |  -  |
 **401** | Unauthorized |  -  |

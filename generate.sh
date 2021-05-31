@@ -12,6 +12,6 @@ docker run --rm \
         -g python \
 	-p "infoName=DataMeta Dev Team" \
 	-p "infoEmail=leon.kuchenbecker@uni-tuebingen.de" \
-	-p "packageVersion=0.25.0" \
+	-p "packageVersion=0.26.0" \
         --package-name datameta_client_lib \
         -o /datameta_client_lib
