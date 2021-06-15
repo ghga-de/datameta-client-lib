@@ -1,6 +1,6 @@
 # datameta_client_lib.MetadataApi
 
-All URIs are relative to *https://raw.githubusercontent.com/api/v0*
+All URIs are relative to *https://raw.githubusercontent.com/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -32,10 +32,10 @@ from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from datameta_client_lib.model.meta_data_set import MetaDataSet
 from pprint import pprint
-# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = datameta_client_lib.Configuration(
-    host = "https://raw.githubusercontent.com/api/v0"
+    host = "https://raw.githubusercontent.com/api/v1"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -122,10 +122,10 @@ from datameta_client_lib.model.meta_data_response import MetaDataResponse
 from datameta_client_lib.model.meta_datum import MetaDatum
 from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
-# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = datameta_client_lib.Configuration(
-    host = "https://raw.githubusercontent.com/api/v0"
+    host = "https://raw.githubusercontent.com/api/v1"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -223,10 +223,10 @@ import datameta_client_lib
 from datameta_client_lib.api import metadata_api
 from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
-# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = datameta_client_lib.Configuration(
-    host = "https://raw.githubusercontent.com/api/v0"
+    host = "https://raw.githubusercontent.com/api/v1"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -309,10 +309,10 @@ import datameta_client_lib
 from datameta_client_lib.api import metadata_api
 from datameta_client_lib.model.meta_datum_response import MetaDatumResponse
 from pprint import pprint
-# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = datameta_client_lib.Configuration(
-    host = "https://raw.githubusercontent.com/api/v0"
+    host = "https://raw.githubusercontent.com/api/v1"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -390,10 +390,10 @@ from datameta_client_lib.api import metadata_api
 from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from pprint import pprint
-# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = datameta_client_lib.Configuration(
-    host = "https://raw.githubusercontent.com/api/v0"
+    host = "https://raw.githubusercontent.com/api/v1"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -478,10 +478,10 @@ from datameta_client_lib.api import metadata_api
 from datameta_client_lib.model.error_model import ErrorModel
 from datameta_client_lib.model.meta_data_set_response import MetaDataSetResponse
 from pprint import pprint
-# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = datameta_client_lib.Configuration(
-    host = "https://raw.githubusercontent.com/api/v0"
+    host = "https://raw.githubusercontent.com/api/v1"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -571,10 +571,10 @@ from datameta_client_lib.model.meta_data_response import MetaDataResponse
 from datameta_client_lib.model.meta_datum import MetaDatum
 from datameta_client_lib.model.error_model import ErrorModel
 from pprint import pprint
-# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v0
+# Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = datameta_client_lib.Configuration(
-    host = "https://raw.githubusercontent.com/api/v0"
+    host = "https://raw.githubusercontent.com/api/v1"
 )
 
 # The client must configure the authentication and authorization parameters
