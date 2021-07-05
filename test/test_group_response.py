@@ -13,11 +13,13 @@ import sys
 import unittest
 
 import datameta_client_lib
-from datameta_client_lib.model.user_update_request import UserUpdateRequest
+from datameta_client_lib.model.identifier import Identifier
+globals()['Identifier'] = Identifier
+from datameta_client_lib.model.group_response import GroupResponse
 
 
-class TestUserUpdateRequest(unittest.TestCase):
-    """UserUpdateRequest unit test stubs"""
+class TestGroupResponse(unittest.TestCase):
+    """GroupResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +27,10 @@ class TestUserUpdateRequest(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testUserUpdateRequest(self):
-        """Test UserUpdateRequest"""
+    def testGroupResponse(self):
+        """Test GroupResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = UserUpdateRequest()  # noqa: E501
+        # model = GroupResponse()  # noqa: E501
         pass
 
 

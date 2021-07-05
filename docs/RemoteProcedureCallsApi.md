@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_information**
-> UserResponse get_user_information()
+> WhoamiResponse get_user_information()
 
 [Not RESTful]: Returns information about the authenticated user
 
@@ -312,7 +312,7 @@ import time
 import datameta_client_lib
 from datameta_client_lib.api import remote_procedure_calls_api
 from datameta_client_lib.model.error_model import ErrorModel
-from datameta_client_lib.model.user_response import UserResponse
+from datameta_client_lib.model.whoami_response import WhoamiResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://raw.githubusercontent.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
@@ -356,7 +356,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**UserResponse**](UserResponse.md)
+[**WhoamiResponse**](WhoamiResponse.md)
 
 ### Authorization
 

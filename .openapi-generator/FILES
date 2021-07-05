@@ -30,6 +30,7 @@ datameta_client_lib/model/file_response.py
 datameta_client_lib/model/file_update_request.py
 datameta_client_lib/model/file_upload_response.py
 datameta_client_lib/model/file_url.py
+datameta_client_lib/model/group_response.py
 datameta_client_lib/model/group_submissions.py
 datameta_client_lib/model/group_update_request.py
 datameta_client_lib/model/identifier.py
@@ -54,9 +55,10 @@ datameta_client_lib/model/staged_meta_data_sets.py
 datameta_client_lib/model/submission_request.py
 datameta_client_lib/model/submission_response.py
 datameta_client_lib/model/user_response.py
-datameta_client_lib/model/user_response_group.py
 datameta_client_lib/model/user_session.py
 datameta_client_lib/model/user_update_request.py
+datameta_client_lib/model/whoami_response.py
+datameta_client_lib/model/whoami_response_group.py
 datameta_client_lib/model_utils.py
 datameta_client_lib/models/__init__.py
 datameta_client_lib/models/__init__.py
@@ -74,6 +76,7 @@ docs/FileUpdateRequest.md
 docs/FileUploadResponse.md
 docs/FileUrl.md
 docs/FilesApi.md
+docs/GroupResponse.md
 docs/GroupSubmissions.md
 docs/GroupUpdateRequest.md
 docs/GroupsApi.md
@@ -106,9 +109,10 @@ docs/SubmissionResponse.md
 docs/SubmissionsApi.md
 docs/UserApi.md
 docs/UserResponse.md
-docs/UserResponseGroup.md
 docs/UserSession.md
 docs/UserUpdateRequest.md
+docs/WhoamiResponse.md
+docs/WhoamiResponseGroup.md
 git_push.sh
 requirements.txt
 setup.cfg
@@ -128,6 +132,7 @@ test/test_file_update_request.py
 test/test_file_upload_response.py
 test/test_file_url.py
 test/test_files_api.py
+test/test_group_response.py
 test/test_group_submissions.py
 test/test_group_update_request.py
 test/test_groups_api.py
@@ -160,7 +165,8 @@ test/test_submission_response.py
 test/test_submissions_api.py
 test/test_user_api.py
 test/test_user_response.py
-test/test_user_response_group.py
 test/test_user_session.py
 test/test_user_update_request.py
+test/test_whoami_response.py
+test/test_whoami_response_group.py
 tox.ini
