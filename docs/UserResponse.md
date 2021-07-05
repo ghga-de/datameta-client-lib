@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | [**Identifier**](Identifier.md) |  | 
 **name** | **str** |  | 
-**group** | [**WhoamiResponseGroup**](WhoamiResponseGroup.md) |  | 
+**group_id** | [**Identifier**](Identifier.md) |  | 
 **group_admin** | **bool, none_type** |  | [optional] 
 **site_admin** | **bool, none_type** |  | [optional] 
 **site_read** | **bool, none_type** |  | [optional] 
