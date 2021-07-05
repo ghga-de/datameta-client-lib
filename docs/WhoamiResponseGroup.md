@@ -1,4 +1,4 @@
-# UserResponseGroup
+# WhoamiResponseGroup
 
 
 ## Properties

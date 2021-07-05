@@ -1,11 +1,11 @@
-# RegisterSettingsResponse
+# GroupResponse
 
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_agreement** | **str, none_type** |  | 
-**groups** | [**[WhoamiResponseGroup]**](WhoamiResponseGroup.md) |  | 
+**id** | [**Identifier**](Identifier.md) |  | 
+**name** | **str** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

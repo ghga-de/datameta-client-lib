@@ -1,4 +1,4 @@
-# UserResponse
+# WhoamiResponse
 
 
 ## Properties
@@ -6,11 +6,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | [**Identifier**](Identifier.md) |  | 
 **name** | **str** |  | 
+**group_admin** | **bool** |  | 
+**site_admin** | **bool** |  | 
+**site_read** | **bool** |  | 
+**email** | **str** |  | 
 **group** | [**WhoamiResponseGroup**](WhoamiResponseGroup.md) |  | 
-**group_admin** | **bool, none_type** |  | [optional] 
-**site_admin** | **bool, none_type** |  | [optional] 
-**site_read** | **bool, none_type** |  | [optional] 
-**email** | **str, none_type** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

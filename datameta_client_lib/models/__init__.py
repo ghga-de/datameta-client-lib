@@ -20,6 +20,7 @@ from datameta_client_lib.model.file_response import FileResponse
 from datameta_client_lib.model.file_update_request import FileUpdateRequest
 from datameta_client_lib.model.file_upload_response import FileUploadResponse
 from datameta_client_lib.model.file_url import FileUrl
+from datameta_client_lib.model.group_response import GroupResponse
 from datameta_client_lib.model.group_submissions import GroupSubmissions
 from datameta_client_lib.model.group_update_request import GroupUpdateRequest
 from datameta_client_lib.model.identifier import Identifier
@@ -44,6 +45,7 @@ from datameta_client_lib.model.staged_meta_data_sets import StagedMetaDataSets
 from datameta_client_lib.model.submission_request import SubmissionRequest
 from datameta_client_lib.model.submission_response import SubmissionResponse
 from datameta_client_lib.model.user_response import UserResponse
-from datameta_client_lib.model.user_response_group import UserResponseGroup
 from datameta_client_lib.model.user_session import UserSession
 from datameta_client_lib.model.user_update_request import UserUpdateRequest
+from datameta_client_lib.model.whoami_response import WhoamiResponse
+from datameta_client_lib.model.whoami_response_group import WhoamiResponseGroup
